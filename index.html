@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta Dəyişdir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">bank<span>a</span></div>
+        <nav class="nav-links">
+            <a href="#" class="active">BANK</a>
+            <a href="#">BİZNES</a>
+            <a href="#">FƏRDİ</a>
+            <a href="#">KART</a>
+            <a href="#">ONLİNE</a>
+            <a href="#">MÜRACİƏT</a>
+            <a href="#">HAQQIMIZDA</a>
+        </nav>
+        <button class="login-btn">LOGİN</button>
+    </header>
+
+    <main class="converter-container">
+        <h1 class="page-title">Valyuta dəyişdir</h1>
+
+        <div id="error-message" class="error-box" style="display: none;"></div>
+
+        <div class="converter-grid">
+            
+            <div class="converter-column">
+                <label class="input-label">Daxil et/Dəyiş</label>
+                <div class="currency-tabs" id="from-tabs">
+                    <button class="tab-btn active" data-currency="RUB">RUB</button>
+                    <button class="tab-btn" data-currency="USD">USD</button>
+                    <button class="tab-btn" data-currency="EUR">EUR</button>
+                    <button class="tab-btn" data-currency="GBP">GBP</button>
+                </div>
+                <div class="input-block">
+                    <input type="text" id="from-amount" value="0">
+                    <span class="rate-note" id="from-rate-text">1 RUB = ...</span>
+                </div>
+            </div>
+
+            <div class="converter-column">
+                <label class="input-label">Daxil et/Dəyiş</label>
+                <div class="currency-tabs" id="to-tabs">
+                    <button class="tab-btn" data-currency="RUB">RUB</button>
+                    <button class="tab-btn active" data-currency="USD">USD</button>
+                    <button class="tab-btn" data-currency="EUR">EUR</button>
+                    <button class="tab-btn" data-currency="GBP">GBP</button>
+                </div>
+                <div class="input-block">
+                    <input type="text" id="to-amount">
+                    <span class="rate-note" id="to-rate-text">1 USD = ...</span>
+                </div>
+            </div>
+
+            <div class="converter-column">
+                <label class="input-label">Hansı bank?</label>
+                <div class="currency-tabs" id="bank-tabs">
+                    <button class="tab-btn" data-bank="ABC">ABC</button>
+                    <button class="tab-btn active" data-bank="NEW">NEW</button>
+                    <button class="tab-btn" data-bank="AME">AME</button>
+                    <button class="tab-btn" data-bank="RED">RED</button>
+                </div>
+                
+                <div class="bank-result-box">
+                    <div class="badge buy-badge">BUY</div>
+                    <div class="bank-value" id="buy-value">0.00</div>
+                </div>
+
+                <div class="bank-result-box">
+                    <div class="badge sell-badge">SELL</div>
+                    <div class="bank-value" id="sell-value">0.00</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

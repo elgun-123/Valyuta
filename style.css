@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Roboto, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #fcfbfe;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #833ae0;
+}
+
+.logo span {
+    background: #833ae0;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 2px;
+    font-size: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 15px;
+}
+
+.nav-links a.active { color: #000; }
+
+.login-btn {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.converter-container {
+    max-width: 1100px; 
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.offline-msg {
+    background-color: #d83a3a;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden { display: none !important; }
+
+.converter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.input-label {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.currency-tabs {
+    display: flex;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px 0;
+    background: #fff;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: #bbb;
+}
+
+.tab-btn:not(:last-child) { border-right: 1px solid #e2e2e2; }
+
+.tab-btn.active {
+    background: #833ae0;
+    color: #fff;
+}
+
+.input-block, .bank-result-box {
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    background: #fff;
+    min-height: 140px;
+}
+
+.input-block {
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-block input {
+    border: none;
+    outline: none;
+    font-size: 38px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.rate-note {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.bank-result-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.badge {
+    width: 90px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buy-badge { background-color: #a252f4; }
+
+.sell-badge { background-color: #833ae0; }
+
+.bank-value {
+    font-size: 38px;
+    font-weight: bold;
+    padding-left: 25px;
+} 
