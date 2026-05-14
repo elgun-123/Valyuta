@@ -54,6 +54,7 @@ body {
 .converter-container {
     max-width: 1100px; 
     margin: 50px auto;
+    overflow: hidden;
     padding: 0 20px;
 }
 
@@ -90,6 +91,7 @@ body {
 .currency-tabs {
     display: flex;
     border: 1px solid #e2e2e2;
+    overflow: hidden;
     border-radius: 6px;
     margin-bottom: 20px;
 }
@@ -141,6 +143,7 @@ body {
 .bank-result-box {
     display: flex;
     align-items: center;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 
