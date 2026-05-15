@@ -1,8 +1,8 @@
 const bankPrice = {
-    ABC: { buy: 0.01, sell: -0.005 },
-    NEW: { buy: 0.02, sell: -0.01 },
-    AME: { buy: 0.015, sell: -0.015 },
-    RED: { buy: 0.005, sell: -0.005 }
+    ABC: { buy: -0.01, sell: 0.005 },
+    NEW: { buy: -0.02, sell: 0.01 },
+    AME: { buy: -0.015, sell: 0.015 },
+    RED: { buy: -0.005, sell: 0.005 }
 };
 
 let sourceCurrency = "RUB";
